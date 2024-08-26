@@ -1,0 +1,86 @@
+#register {
+    background-image: url('../Assets/SL-110820-37810-03.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 10px;
+
+    .reg-container {
+        width: 100%;
+        max-width: 500px;
+        padding: 2rem;
+        box-sizing: border-box;
+    }
+
+    .form {
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 0.2rem 0.25rem rgba(0, 0, 0, 0.2);
+        padding: 1.5rem;
+        box-sizing: border-box;
+
+        .inputContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .welcome {
+                text-align: center;
+                h2 {
+                    color: rebeccapurple;
+                }
+                .line {
+                    display: block;
+                    border-bottom: 5px solid rebeccapurple;
+                    width: 50px;
+                    margin: 15px auto 0;
+                }
+            }
+
+            input {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid silver;
+                outline: none;
+                box-sizing: border-box;
+            }
+
+            .btn input {
+                width: 100%;
+                background-color: rebeccapurple;
+                color: white;
+                padding: 12px;
+                cursor: pointer;
+                border: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    #register {
+        padding: 0 5px;
+    }
+
+    .reg-container {
+        width: 100%;
+        max-width: none;
+        padding: 1rem;
+    }
+
+    .form {
+        padding: 1rem;
+    }
+
+    .inputContainer {
+        gap: 15px;
+    }
+
+    .btn input {
+        width: 100%;
+    }
+}
